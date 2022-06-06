@@ -57,7 +57,7 @@ function gotResult(error, results) {
         if(predicition_1 == "angry") {
             document.getElementById("result_emoji").innerHTML = "&#128548;";
         }
-        if(predicition_1 == "crying") {
+        if(results[0].label == "crying") {
             document.getElementById("result_emoji").innerHTML = "&#128546;";
         }
         if(predicition_2 == "happy") {
@@ -69,7 +69,7 @@ function gotResult(error, results) {
         if(predicition_2 == "angry") {
             document.getElementById("result_emoji_2").innerHTML = "&#128548;";
         }
-        if(predicition_2 == "crying") {
+        if(results[1].label == "crying") {
             document.getElementById("result_emoji_2").innerHTML = "&#128546;";
         }
     }
